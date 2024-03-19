@@ -1,58 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>404 - Page is missing!</title>
-        <link rel="stylesheet" href="assets/css/tailwind.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="icon" type="image/x-icon" href="assets/image/fav.png">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="language" content="English">        
-    </head>
-
-    <body class="bg-gray-100">
-        
-        <section class="h-screen flex items-center justify-center">
-
-            <div class="container max-w-screen-xl mx-auto px-4">
-
-                <div class="text-center">
-                    <h1 class="font-medium text-gray-700 text-4xl md:text-5xl mb-5">404 - This page is missing, but..</h1>
-                    <p class="font-normal text-gray-400 text-md md:text-lg mb-14">If you're looking for the article, it must be at <a id="link" class="underline text-gray-500">blog.imsadra.me/<span id="index"></span></a>. ✨</p>
-                    <a href="https://imsadra.me" class="py-3 md:px-9 md:py-4 font-medium md:font-semibold bg-gray-700 text-gray-50 text-sm rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-150">Back to home</a>
-                </div>
-
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Redirecting..</title>
+      <link rel="stylesheet" href="assets/css/tailwind.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="icon" type="image/x-icon" href="assets/image/fav.png">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="language" content="English">
+   </head>
+   <body class="bg-gray-100">
+      <section class="h-screen flex items-center justify-center">
+         <div class="container max-w-screen-xl mx-auto px-4">
+            <div class="text-center">
+               <h1 class="font-medium text-gray-700 text-4xl md:text-5xl mb-5">Redirecting to Hashnode..</h1>
+               <p class="font-normal text-gray-400 text-md md:text-lg mb-14">If you're looking for the article, it must be at <a id="link" class="underline text-gray-500">blog.imsadra.me/<span id="index"></span></a>. ✨</p>
+               <a href="https://imsadra.me" class="py-3 md:px-9 md:py-4 font-medium md:font-semibold bg-gray-700 text-gray-50 text-sm rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-150">Back to home</a>
             </div>
-
-        </section>
-
-        <script>
-            feather.replace()
-            // Function to extract the path from the URL
-            function getPathFromURL() {
-                var url = window.location.href; // Get the current URL
-                var path = url.split("/").pop(); // Split the URL by "/" and get the last part
-                return path;
-            }
-
-            // Function to display the path on the page
-            function displayPath() {
-                var path = getPathFromURL();
-                document.getElementById("index").innerText = path;
-                document.getElementById("link").href = "https://blog.imsadra.me/" + path;
-                window.location.replace("https://blog.imsadra.me/" + path);
-            }
-
-            // Call the displayPath function when the page loads
-            window.onload = displayPath;
-        </script>
-
-    </body>
+         </div>
+      </section>
+      <script>
+         feather.replace()
+         // Function to extract the path from the URL
+         function getPathFromURL() {
+             var url = window.location.href; // Get the current URL
+             var path = url.split("/").pop(); // Split the URL by "/" and get the last part
+             return path;
+         }
+         
+         // Function to display the path on the page
+         function displayPath() {
+             var path = getPathFromURL();
+             document.getElementById("index").innerText = path;
+             document.getElementById("link").href = "https://blog.imsadra.me/" + path;
+             window.location.replace("https://blog.imsadra.me/" + path);
+         }
+         
+         // Call the displayPath function when the page loads
+         window.onload = displayPath;
+      </script>
+   </body>
 </html>
