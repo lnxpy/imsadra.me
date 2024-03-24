@@ -6,6 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Sadra Yahyapour - Software Engineering Student</title>
       <link rel="stylesheet" href="assets/css/tailwind.css">
+      <link rel="stylesheet" href="assets/css/styles.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="icon" type="image/x-icon" href="assets/image/fav.png">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +27,7 @@
             </nav>
             <div class="text-center">
                <div class="flex justify-center mb-16">
-                  <img src="assets/image/home-img.png" alt="Image" width="265" class="pointer-events-none select-none shadow-sm rounded-full">
+                  <img src="assets/image/home-img.png" alt="Image" width="265" class="pointer-events-none select-none shadow-sm rounded-full z-10">
                </div>
                <h6 class="font-medium text-gray-600 text-lg md:text-2xl uppercase mb-8">Sadra Yahyapour</h6>
                <h1 class="font-normal text-gray-900 text-4xl md:text-7xl leading-none mb-8 ">Software Engineering Student</h1>
@@ -57,7 +58,7 @@
       </section>
       <section class="py-10 md:py-16">
          <div class="container max-w-screen-xl mx-auto px-4">
-            <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5"><span class="text-gray-300 select-none">#</span> Projects</h1>
+            <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5"><span class="text-gray-300 select-none hover:text-gray-400">#</span> Projects</h1>
             <p class="font-normal text-gray-500 text-xs md:text-base mb-20">Here you can follow some of my open-source projects that I continuously work on and being actively maintained.</p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                <div class="bg-gray-50 px-8 py-10 rounded-md">
@@ -106,7 +107,7 @@
       </section>
       <section class="py-10 md:py-16">
          <div class="container max-w-screen-xl mx-auto px-4">
-            <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5"><span class="text-gray-300 select-none">#</span> Education</h1>
+            <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5"><span class="text-gray-300 select-none hover:text-gray-400">#</span> Education</h1>
             <p class="font-normal text-gray-500 text-xs md:text-base mb-20">Below, you'll discover a summary of my academic background and the positions I pursued in education.</p>
             <div class="flex space-x-6">
                <h1 class="font-normal text-gray-700 text-3xl md:text-2xl">2024</h1>
@@ -128,7 +129,7 @@
       </section>
       <section class="py-10 md:py-16">
          <div class="container max-w-screen-xl mx-auto px-4">
-            <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5"><span class="text-gray-300 select-none">#</span> Experience</h1>
+            <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5"><span class="text-gray-300 select-none hover:text-gray-400">#</span> Experience</h1>
             <p class="font-normal text-gray-500 text-xs md:text-base mb-20">Below, you'll find a concise overview of the positions I've held throughout my career.</p>
             <div class="flex flex-col lg:flex-row justify-between">
                <div class="space-y-8 md:space-y-16 mb-16 md:mb-0">
@@ -180,8 +181,12 @@
             </div>
          </div>
       </footer>
+      <script src="assets/js/particles.min.js"></script>
       <script>
          feather.replace()
+         particlesJS.load('particles-js', 'assets/js/particlesjs-config.json');
       </script>
+      <div id="particles-js" class="absolute w-full h-full top-0 left-0" style="z-index: -1;"></div>
+      <script src="particles.js"></script>
    </body>
 </html>
